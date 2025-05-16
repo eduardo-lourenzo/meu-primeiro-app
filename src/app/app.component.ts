@@ -8,7 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [CommonModule, RouterModule, HomeComponent]
+  imports: [CommonModule, RouterModule]
 })
 export class AppComponent {
   title = 'Meu Primeiro App';
