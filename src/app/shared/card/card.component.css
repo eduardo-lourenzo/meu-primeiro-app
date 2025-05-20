@@ -1,0 +1,22 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 64px;
+    aspect-ratio: 1 / 1;
+    padding: 4px;
+    border-radius: 12px;
+    
+    background-color: white;
+}
+
+.card-svg{
+    width: 24px;
+    height: 24px;
+    color: var(--dark-primary-color);
+}
+
+.card-title {
+    font-size: 12px;
+}
