@@ -1,7 +1,7 @@
-<app-card class="two-columns"></app-card>
-
-<app-card></app-card>
-<app-card></app-card>
-
-<app-card></app-card>
-<app-card></app-card>
+<ng-container *ngFor="let card of cards; let cardIndex = index">
+    <app-card 
+        [card_title]="card.title" 
+        [card_icon_path]="card.svgPath" 
+        [class.two-columns]="cardIndex === 0">
+    </app-card>
+</ng-container>

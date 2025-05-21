@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -10,14 +10,17 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  card_title = "Pagar";
+  @Input() card_title = "Pagar";
+  @Input() card_icon_path = "";
   card_icon_svg: SafeHtml = "";
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.http.get("assets/icons/barcode.svg", { responseType: "text" })
-      .subscribe(svg => this.card_icon_svg = this.sanitizer.bypassSecurityTrustHtml(svg));
+    if (this.card_icon_path) {
+      this.http.get(this.card_icon_path, { responseType: "text" })
+        .subscribe(svg => this.card_icon_svg = this.sanitizer.bypassSecurityTrustHtml(svg));
+    }
   }
 
 }
