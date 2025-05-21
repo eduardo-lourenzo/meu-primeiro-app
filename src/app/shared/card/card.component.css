@@ -3,12 +3,15 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 64px;
     aspect-ratio: 1 / 1;
     padding: 4px;
     border-radius: 12px;
     
     background-color: white;
+}
+
+:host-context(#two-columns) .card-container {
+  aspect-ratio: 2 / 1 !important;
 }
 
 .card-svg{
