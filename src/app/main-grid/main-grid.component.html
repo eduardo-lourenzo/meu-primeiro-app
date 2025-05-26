@@ -2,6 +2,6 @@
     <app-card 
         [card_title]="card.title" 
         [card_icon_path]="card.svgPath" 
-        [class.two-columns]="cardIndex === 0">
+        [ngClass]="getCardSizeClass(cardIndex)">
     </app-card>
-</ng-container>
+</ng-container> 

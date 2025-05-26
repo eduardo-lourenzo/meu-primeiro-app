@@ -3,20 +3,24 @@
     flex-direction: column;
     justify-content: space-between;
 
-    aspect-ratio: 1 / 1;
     padding: 4px;
     border-radius: 12px;
 
     background-color: white;
 }
 
-:host-context(.two-columns) .card-container {
-    aspect-ratio: 2 / 1 !important;
+:host-context(.card--full-width) .card-container {
+    aspect-ratio: 2 / 1;
+}
+
+:host-context(.card--half-width) .card-container,
+:host-context(.card--third-width) .card-container {
+    aspect-ratio: 1 / 1;
 }
 
 .card-svg {
-    width: 24px;
-    height: 24px;
+    width: 25%;
+    height: 25%;
     color: var(--dark-primary-color);
 }
 

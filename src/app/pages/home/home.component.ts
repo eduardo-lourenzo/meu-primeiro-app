@@ -16,6 +16,9 @@ export class HomeComponent {
     {title: "Pix e transferir", svgPath: "assets/icons/sync_alt.svg"},
     {title: "Pagar",            svgPath: "assets/icons/barcode.svg"},
     {title: "Extrato",          svgPath: "assets/icons/list.svg"},
-    {title: "Cartões",          svgPath: "assets/icons/credit_card.svg"}
+    {title: "Cartões",          svgPath: "assets/icons/credit_card.svg"},
+    {title: "Área pix",         svgPath: "assets/icons/api.svg"},
+    {title: "iToken",           svgPath: "assets/icons/security_key_horizontal.svg"},
+    {title: "Ajuda",            svgPath: "assets/icons/chat_info.svg"}
   ];
 }

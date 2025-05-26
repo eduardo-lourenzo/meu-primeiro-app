@@ -6,12 +6,13 @@
 
     width: 100vw;
     height: auto;
-    max-width: calc(100vh * 9 / 16);
+    max-width: calc(100vh / 2); /*aspect ratio 10:20*/
     max-height: 100vh;
 
     overflow: hidden;
 
-    aspect-ratio: 9 / 16;
+
+    aspect-ratio: 1 / 2;  /*aspect ratio 10:20*/
 
     background: var(--dark-gray-background);
     border: 4px solid black;
