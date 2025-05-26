@@ -4,11 +4,12 @@
     justify-content: space-between;
 
     height: 100%;
-
     padding: 4px;
     border-radius: 12px;
-
+    
     background-color: white;
+    
+    container-type: size;
 }
 
 :host-context(.card--full-width) .card-container {
@@ -21,8 +22,8 @@
 }
 
 .card-svg {
-    flex: 0 0 33.33%;
     display: flex;
+    flex: 0 0 33.33%;
 
     width: 33.33%;
     height: 33.33%;
@@ -31,11 +32,10 @@
 }
 
 .card-title {
-    flex: 0 0 33.33%;
     display: flex;
-
+    flex: 0 0 33.33%;
     align-items: flex-end;
     justify-content: flex-start;
 
-    font-size: 1em;
+    font-size: 16.67cqh; /*33,34 / 2*/
 }
