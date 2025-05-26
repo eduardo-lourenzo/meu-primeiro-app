@@ -1,0 +1,52 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10vh;
+    width: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    background: var(--dark-gray-background);
+}
+
+.initial-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50%;
+    border-radius: 50%;
+    margin-right: 8px;
+    
+    aspect-ratio: 1 / 1;
+    
+    background: black;
+    color: white;
+    font-size: 12px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.welcome {
+    margin: 0;
+    font-size: 10px;
+}
+
+.cpf {
+    margin: 0;
+    font-size: 8px;
+}
+
+.change-account {
+    margin-left: auto;
+    height: 20px;
+    padding: 0 8px;
+    font-size: 10px;
+}

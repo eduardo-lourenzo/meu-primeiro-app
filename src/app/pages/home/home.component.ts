@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { PhoneFrameComponent } from 'src/app/shared/phone-frame/phone-frame.component';
+import { HeaderComponent } from 'src/app/header/header.component';
 import { MainGridComponent } from 'src/app/main-grid/main-grid.component';
 import { CardData } from 'src/app/shared/card/card.model';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PhoneFrameComponent, MainGridComponent /*CardComponent*/],
+  imports: [PhoneFrameComponent, HeaderComponent, MainGridComponent /*CardComponent*/],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
