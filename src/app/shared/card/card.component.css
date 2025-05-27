@@ -1,4 +1,4 @@
-.card-container {
+:host {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,12 +12,12 @@
     container-type: size;
 }
 
-:host-context(.card--full-width) .card-container {
+:host-context(.card--full-width) {
     aspect-ratio: 2 / 1;
 }
 
-:host-context(.card--half-width) .card-container,
-:host-context(.card--third-width) .card-container {
+:host-context(.card--half-width),
+:host-context(.card--third-width) {
     aspect-ratio: 1 / 1;
 }
 
