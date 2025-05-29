@@ -1,11 +1,11 @@
 :host {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /*Least Common Multiple LMC(1, 2, 3) = 6*/
-    gap: 8px;
+    gap: 2cqh;
 
     width: 100%;
     /* height: auto; */
-    padding: 8px;
+    padding: 2cqh;
 }
 
 .card--full-width {
